@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TemperatureChecker.unity
+    path: Assets/Scenes/WeekFourActivities.unity
     guid: 5cbe8a5fb5ee9f74d93af1dad6870a78
   - enabled: 1
     path: Assets/Scenes/WeekTwoActivities.unity

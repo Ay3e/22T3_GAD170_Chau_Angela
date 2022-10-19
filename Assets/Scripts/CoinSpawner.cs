@@ -2,22 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinSpawner : MonoBehaviour
+namespace AngelaChau
 {
-    [SerializeField] private GameObject coinPrefab;
-    // Start is called before the first frame update
-    private void Start()
-    {
-        SpawnCoin();
-        SpawnCoin();
-    }
 
-    // Update is called once per frame
-    private void SpawnCoin()
+    public class CoinSpawner : MonoBehaviour
     {
-        int xPosition = Random.Range(-50,50);
-        int yPosition = Random.Range(-50,50);
-        int zPosition = Random.Range(-50,50);
-        Instantiate(coinPrefab, new Vector3(xPosition, yPosition, zPosition), Quaternion.identity);
+        [SerializeField] private GameObject coinPrefab;
+        // Start is called before the first frame update
+        private void Start()
+        {
+            SpawnCoin();
+            SpawnCoin();
+        }
+
+        // Update is called once per frame
+        private void SpawnCoin()
+        {
+            int xPosition = Random.Range(-50, 50);
+            int yPosition = Random.Range(-50, 50);
+            int zPosition = Random.Range(-50, 50);
+            Instantiate(coinPrefab, new Vector3(xPosition, yPosition, zPosition), Quaternion.identity);
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace AngelaChau
 
     public class ContactScript : MonoBehaviour
     {
+        //declaring variables
         [SerializeField] private ContactEnum chosenContact = ContactEnum.Undefined;
         [SerializeField] private string firstName;
         [SerializeField] private string lastName;
